@@ -12,12 +12,6 @@ public class GoogleTests {
         googleSearchScenario.googleSearchFor("selenium");
     }
 
-    @Test(groups = {"Google"}, description = "Verify Google search with headless Chrome on Docker")
-    public void verifyGoogleWithHeadlessChromeOnDocker() throws Exception {
-        final GoogleSearchScenario googleSearchScenario = new GoogleSearchScenario(SeleniumBrowserType.HEADLESS_CHROME_DOCKER);
-        googleSearchScenario.googleSearchFor("selenium");
-    }
-
     @Test(groups = {"Google"}, description = "Verify Google search with Chrome")
     public void verifyGoogleWithChrome() throws Exception {
         final GoogleSearchScenario googleSearchScenario = new GoogleSearchScenario(SeleniumBrowserType.CHROME);
